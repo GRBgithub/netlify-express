@@ -1,0 +1,74 @@
+{
+  "fields": [
+    {
+      "name": "index",
+      "title": "Index",
+      "type": "integer",
+      "example": 0,
+      "description": "Index of the row"
+    },
+    {
+      "name": "description",
+      "title": "Description",
+      "type": "string",
+      "example": "A nice description",
+      "description": "A description of the row"
+    },
+    {
+      "name": "name",
+      "title": "Index",
+      "type": "string",
+      "example": "Barry Bench",
+      "description": "Index of the row"
+    },
+    {
+      "name": "amount",
+      "title": "Amount",
+      "type": "integer",
+      "example": 25,
+      "description": "Amount"
+    },
+    {
+      "name": "lat",
+      "title": "Latitude",
+      "type": "number",
+      "example": 2.0,
+      "description": "Latitude"
+    },
+    {
+      "name": "lon",
+      "title": "Longitude",
+      "type": "number",
+      "example": 2.0,
+      "description": "Longitude"
+    },
+    {
+      "name": "number",
+      "title": "Number",
+      "type": "number",
+      "example": -3.5,
+      "description": "A number"
+    },
+    {
+      "name": "city",
+      "title": "City",
+      "type": "string",
+      "example": "Lyon",
+      "description": "City"
+    },
+    {
+      "name": "category",
+      "title": "Category",
+      "type": "string",
+      "example": "Storage",
+      "description": "Category of the row"
+    },
+    {
+      "name": "indicator",
+      "title": "Indicator",
+      "type": "number",
+      "example": 0.8,
+      "description": "Indicator"
+    }
+  ]
+}

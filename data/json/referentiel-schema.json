@@ -1,0 +1,52 @@
+{
+  "fields": [
+    {
+      "name": "siren",
+      "title": "N° SIREN",
+      "description": "Numéro de SIREN de la structure",
+      "type": "string"
+    },
+    {
+      "name": "denomination",
+      "title": "denomination",
+      "type": "string"
+    },
+    {
+      "name": "categorie_juridique",
+      "title": "categorie_juridique",
+      "type": "string"
+    },
+    {
+      "name": "tranche_effectif",
+      "title": "tranche_effectif",
+      "type": "string"
+    },
+    {
+      "name": "population",
+      "title": "population",
+      "type": "integer"
+    },
+    {
+      "name": "present_fichier_odf",
+      "title": "present_fichier_odf",
+      "type": "boolean"
+    },
+    {
+      "name": "obligation_publication",
+      "title": "obligation_publication",
+      "type": "string"
+    },
+    
+    {
+      "name": "latitude",
+      "title": "Latitude",
+      "type": "number"
+    },
+    {
+      "name": "longitude",
+      "title": "Longitude",
+      "type": "number"
+    }
+  ],
+  "primaryKey": ["siren"]
+}

@@ -4,12 +4,22 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "csv-parse": "^5.3.8",
+    "data-forge": "^1.10.0",
+    "dotenv": "^16.0.3",
     "express": "^4.16.4",
+    "fs": "^0.0.1-security",
+    "joi": "^17.9.1",
+    "js-yaml": "^4.1.0",
     "netlify-lambda": "^1.4.3",
-    "serverless-http": "^1.9.1"
+    "path": "^0.12.7",
+    "serverless-http": "^1.9.1",
+    "winston": "^3.8.2"
   },
-  "devDependencies": {},
   "scripts": {
+    "dev": "nodemon api-local.js",
     "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
     "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
@@ -23,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/owenconti/netlify-express/issues"
   },
-  "homepage": "https://github.com/owenconti/netlify-express#readme"
+  "homepage": "https://github.com/owenconti/netlify-express#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }

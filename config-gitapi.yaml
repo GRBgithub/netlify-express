@@ -1,0 +1,9 @@
+files:
+  - file: ./data/csv/test.csv
+    schema: ./data/json/test-schema.json
+    options: 
+      separator: ","
+  - file: ./data/csv/ANDORRE/hist.csv
+    schema: ./data/json/bera-schema.json
+    options: 
+      separator: ","
