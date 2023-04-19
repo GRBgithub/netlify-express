@@ -5,7 +5,7 @@ router.get("/", (req, res) => {
   const data = req.app.get('data');
   res.json({
     title: 'GITAPI PROJECT !',
-    infos: 'multi is making very light node.js REST API',
+    infos: 'multi.coop is making a very light node.js express REST API',
     data: data
   });
 });
