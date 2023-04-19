@@ -1,7 +1,9 @@
-const express = require("express");
-const router = express.Router();
+// const express = require("express");
+import express from 'express';
 
-router.get("/", (req, res) => {
+const router = new express.Router();
+
+router.get('/', (req, res) => {
   const data = req.app.get('data');
   res.json({
     title: 'GITAPI PROJECT !',
@@ -10,4 +12,6 @@ router.get("/", (req, res) => {
   });
 });
 
-module.exports = router;
+// module.exports = router;
+
+export default router;

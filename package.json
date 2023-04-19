@@ -2,8 +2,10 @@
   "name": "netlify-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.mjs",
+  "type": "module",
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "csv-parse": "^5.3.8",
@@ -19,7 +21,7 @@
     "winston": "^3.8.2"
   },
   "scripts": {
-    "dev": "nodemon api-local.js",
+    "dev": "cross-env nodemon src/api-local.js",
     "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
     "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },

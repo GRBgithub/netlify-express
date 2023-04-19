@@ -1,8 +1,14 @@
-const dotenv = require('dotenv');
-const path = require('path');
-const Joi = require('joi');
+import dotenv from 'dotenv';
+import path from 'path';
+import Joi from 'joi';
 
-dotenv.config({ path: path.join(__dirname, '../../.env') });
+// const dotenv = require('dotenv');
+// const path = require('path');
+// const Joi = require('joi');
+
+
+dotenv.config({ path: '../../.env' });
+// dotenv.config({ path: path.join(__dirname, '../../.env') });
 
 const defaultConfigYaml = './config-gitapi.yaml'
 
@@ -25,9 +31,11 @@ if (error) {
 console.log('config.js > envVars.PORT : ', envVars.PORT)
 console.log('config.js > envVars.CONFIG_FILE_YAML : ', envVars.CONFIG_FILE_YAML)
 
-module.exports = {
-    // env: envVars.NODE_ENV,
-    port: envVars.PORT,
-    files: envVars.CONFIG_FILE_YAML,
-  };
-  
+// module.exports = {
+//     // env: envVars.NODE_ENV,
+//     port: envVars.PORT,
+//     files: envVars.CONFIG_FILE_YAML,
+//   };
+
+export const port = envVars.PORT;
+export const files = envVars.CONFIG_FILE_YAML;
